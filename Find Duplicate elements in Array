@@ -1,0 +1,17 @@
+int findDuplicate(vector<int> &arr) 
+{
+    int ans = 0;
+
+    //xor kardiya array ko completely ^
+
+    for(int i =0 ; i<arr.size(); i++){
+        ans = ans^arr[i];
+
+    }
+    //ek dusri array li from 1 to n-1 uska xor kardiya 
+
+    for (int i =1 ; i<arr.size(); i++){
+        ans = ans^i;
+    }
+    return ans ;    
+}
