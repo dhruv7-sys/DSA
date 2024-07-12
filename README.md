@@ -1,3 +1,3 @@
 # DSA
 
-All codes in this files are in C++
+All codes in this file are in C++
